@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import {Link ,NavLink} from 'react-router-dom'
-import Alert from './Alert'
 import DrawerToggleButton from './SideDrawer/DrawerToggleButton'
 
 
@@ -34,7 +33,6 @@ const Navbar = (props) => {
                     </div>
                 </div>   
             </nav>
-            <Alert />
         </Fragment>
     )
 }

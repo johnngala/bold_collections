@@ -116,9 +116,17 @@ const Listings = () => {
                     content='Listings page'
                 />
             </Helmet>
+
+            <section className = 'listings_header'>
+                <hr/>
+                <h1>Our Products</h1>
+                <hr/>
+            </section>
+
             <section className='listings__listings'>
                 {displayListings()}
             </section>
+
             <section className='listings__pagination'>
                 <div className='row'>
                     <Pagination

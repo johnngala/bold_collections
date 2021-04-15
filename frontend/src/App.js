@@ -15,7 +15,6 @@ import SideDrawer from './components/SideDrawer/SideDrawer'
 import BackDrop from './components/BackDrop/BackDrop'
 
 import {Provider} from 'react-redux'
-import store from './store'
 import { Component } from 'react';
 
 class App extends Component {
@@ -40,7 +39,7 @@ backDropClickHandler = () => {
     }
 
     return(
-    <Provider store = {store}>
+    <>
       <Router>
         {/* <Layout> */}
         <Navbar drawerClickHandler = {this.drawerToggleClickHandler}/>
@@ -58,7 +57,7 @@ backDropClickHandler = () => {
         {/* </Layout> */}
       </Router>
       <Footer />
-    </Provider>
+    </>
   )
 }
 }

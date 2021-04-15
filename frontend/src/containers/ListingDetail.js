@@ -15,13 +15,7 @@ const ListingDetail = (props) => {
     useEffect(() => {
         const slug = props.match.params.id;
 
-        // const config = {
-        //     headers: {
-        //         'Authorization': `Bearer ${localStorage.getItem('token')}`
-        //     }
-        // };
-
-        axios.get(`http://localhost:8000/api/listings/${slug}`) //, config
+        axios.get(`http://localhost:8000/api/listings/${slug}`) 
         .then(res => {
             setListing(res.data);
             setPrice(numberWithCommas(res.data.price));
