@@ -14,7 +14,7 @@ SECRET_KEY = '&kzk-n0b293y%^_ogxpi7zpgepi0!!zf=5hp!4l@ib%2s_%-1b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['boldcollectionsbackend.herokuapp.com']
 
 
 # Application definition
@@ -71,10 +71,10 @@ DATABASES = {
         # 'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bold_collections',
-        'USER': 'postgres',
-        'PASSWORD': 'Magician23',
-        'HOST': 'localhost'
+        'NAME': 'd78p1ffv1svcbt',
+        'USER': 'qantwedrvtzioh',
+        'PASSWORD': '313866b20fecd2e02997b1b1ec83d0e1e3ed7acec4adbc33d6fa59670eec5101',
+        'HOST': 'ec2-3-217-219-146.compute-1.amazonaws.com'
     }
 }
 
