@@ -12,7 +12,11 @@ export const login = (email, password) => async (dispatch) => {
   const body = pJSON.stringify({ email, password });
 
   try {
-    const res = await axios.post('https://boldcollections.herokuapp.com/api/token/', body, config);
+    const res = await axios.post(
+      'https://boldcollectionsbackend.herokuapp.com/api/token/',
+      body,
+      config,
+    );
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data,
@@ -39,7 +43,7 @@ export const signup = ({ name, email, password, password2 }) => async (dispatch)
 
   try {
     const res = await axios.post(
-      'https://boldcollections.herokuapp.com/api/accounts/signup',
+      'https://boldcollectionsbackend.herokuapp.com/api/accounts/signup',
       body,
       config,
     );

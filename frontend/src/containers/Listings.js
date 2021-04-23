@@ -16,7 +16,9 @@ const Listings = () => {
 
     const fetchData = async () => {
       try {
-        const res = await axios.get('https://boldcollections.herokuapp.com/api/listings/?page=1');
+        const res = await axios.get(
+          'https://boldcollectionsbackend.herokuapp.com/api/listings/?page=1',
+        );
 
         setListings(res.data.results);
         setCount(res.data.count);
@@ -59,7 +61,7 @@ const Listings = () => {
 
   const visitPage = (page) => {
     axios
-      .get(`https://boldcollections.herokuapp.com/api/listings/?page=${page}`)
+      .get(`https://boldcollectionsbackend.herokuapp.com/api/listings/?page=${page}`)
       .then((res) => {
         setListings(res.data.results);
         setPrevious(res.data.previous);

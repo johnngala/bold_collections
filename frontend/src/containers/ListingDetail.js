@@ -15,7 +15,7 @@ const ListingDetail = (props) => {
     const slug = props.match.params.id;
 
     axios
-      .get(`https://boldcollections.herokuapp.com/api/listings/${slug}`)
+      .get(`https://boldcollectionsbackend.herokuapp.com/api/listings/${slug}`)
       .then((res) => {
         setListing(res.data);
         setPrice(numberWithCommas(res.data.price));
